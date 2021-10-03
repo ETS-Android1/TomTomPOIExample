@@ -63,8 +63,8 @@ public class TomTomPOIModule extends ReactContextBaseJavaModule {
                     .appendQueryParameter("typeahead", "true")
                     //Limit the response to 10 result to reserve bandwidth while testing
                     .appendQueryParameter("limit", "10")
-                    .appendQueryParameter("lat", String.valueOf(lon))
-                    .appendQueryParameter("lon", String.valueOf(lat))
+                    .appendQueryParameter("lat", String.valueOf(lat))
+                    .appendQueryParameter("lon", String.valueOf(lon))
                     //Assume Search Radius of 3000 meters (API Parameter radius)
                     .appendQueryParameter("radius", "3000")
                     .appendQueryParameter("key", apiKey);
