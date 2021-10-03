@@ -10,7 +10,7 @@ const {TomTomPOIModule} = NativeModules;
  */
 interface TomTomPOIModuleInterface {
   /**
-   * Calls  the native Andorid TomTomPOIModule.createAPIRequest function witch
+   * Calls  the native Android TomTomPOIModule.createAPIRequest function witch
    * makes a call to the TomTom Points Of Interest Search API
    * @param {string=} query Search query for the POI API
    * @param {number=} lat Latitude of the current user location for the POI API

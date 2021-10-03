@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * This package Contains the List of Native Android Modules to be registered with the  android application
+ */
 public class MyAppPackage implements ReactPackage {
 
     @NonNull
