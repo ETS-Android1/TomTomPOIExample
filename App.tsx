@@ -48,7 +48,7 @@ const App = () => {
    * @param text Text in the TextInput View to use for the API query
    */
   function handleSearch({text}: {text: string}) {
-    if (text.length <= 3) {
+    if (text.length < 3) {
       return;
     }
     GetLocation.getCurrentPosition({

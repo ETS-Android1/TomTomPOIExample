@@ -1,10 +1,10 @@
 package com.tomtompoiexample;
+
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import androidx.annotation.NonNull;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -25,6 +25,9 @@ public class TomTomPOIModule extends ReactContextBaseJavaModule {
         super(context);
     }
 
+    //TODO This string should be in a separate uncommitted file
+    static final String TOMTOM_API_KEY= "PASTE_YOUR_API_KEY_HERE";
+
     /**
      * Builds and  Queues an HTTP GET Request to the Tom Tom Points Of Interest Search API.
      * This method will queue a request only if Internet is available for better battery usage
@@ -43,9 +46,6 @@ public class TomTomPOIModule extends ReactContextBaseJavaModule {
             promise.reject("API Request Error", "No Internet Connection");
             return;
         }
-
-        //TODO This string should be in a separate uncommitted file
-        String apiKey= "STL50FYeIXT5S7PZOY6GNzQ3SmG29JQp";
 
         try {
             //Build The request URI
@@ -67,7 +67,7 @@ public class TomTomPOIModule extends ReactContextBaseJavaModule {
                     .appendQueryParameter("lon", String.valueOf(lon))
                     //Assume Search Radius of 3000 meters (API Parameter radius)
                     .appendQueryParameter("radius", "3000")
-                    .appendQueryParameter("key", apiKey);
+                    .appendQueryParameter("key", TOMTOM_API_KEY);
 
             // Create a new request queue. Ideally this object should be a singleton or get reused during its context, recreating here is wasteful
             RequestQueue requestQueue = Volley.newRequestQueue(this.getReactApplicationContext());
