@@ -1,5 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+
+// 3rd Party library Accordion View
 import {
   Collapse,
   CollapseHeader,
@@ -12,14 +14,20 @@ interface PointOfInterest {
   poiName: string;
   poiDistance: number;
   poiStreet: string;
-  isLoading?: boolean;
 }
 
+/**
+ * Collapsible View Component for point of interest items.
+ * The View Header Displays:
+ * @property {string} poiName : Point of Interest name.
+ * Displayed in the view header
+ * @property {number} poiDistance : Point of Interest Distance in Meters.
+ * Displayed in the collapsible body
+ * @property {string} poiStreet : Point of Interest full Address.
+ * Displayed in the collapsible body
+ */
 export class PointOfInterestItem extends React.PureComponent<PointOfInterest> {
   render() {
-    if (this.props.isLoading) {
-      return <View>Loading POIS...</View>;
-    }
     return (
       <Collapse style={styles.container}>
         <CollapseHeader style={styles.containerLeft}>

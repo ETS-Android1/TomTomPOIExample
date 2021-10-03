@@ -1,3 +1,6 @@
+/**
+ *Type Interface for JSON Object Responses of the TomTom Points of Interest Search API
+ */
 export interface ITomTomPOIResponse {
   summary: Summary;
   results: Result[];
