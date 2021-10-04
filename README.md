@@ -11,9 +11,8 @@
 > The Items inside The List View get populated from the Json response received from the API.</br>
 > The networking requests are in native android (java) and are returned as a promise to React-Native (Typescript). </br>
 > Native module implementation is completed only for the Android platform, iOS is not yet implemented. </br>
-<p>
-<img height="570" src="images/app.gif" width="270" align="center" />
-</p>
+
+<img height="570" src="images/app.gif" width="270"/>
 
 ## Prerequisites 
 
