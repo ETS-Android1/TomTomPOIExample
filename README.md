@@ -7,10 +7,11 @@
 
 
 > This is a React-Native Typescript application that serves as an example on how to implement calls to the TomTom Points Of Interest Search API using Native Modules.</br>
-> Using React Hooks and React Components we created a custom List View that inflates its children when a TomTom API response is received.</br>
-> The Items inside The List View get populated from the Json response received from the API.</br>
-> The networking requests are in native android (java) and are returned as a promise to React-Native (Typescript). </br>
-> Native module implementation is completed only for the Android platform, iOS is not yet implemented. </br>
+> Using React Hooks and React Components we are creatinng a custom List View that inflates its children when a TomTom API response is received.</br>
+> The Items inside this List View get populated from the Json response received from the API.</br>
+> The network requests are implemented in native android (java). They are returned as a promise to React-Native (Typescript). </br>
+> 
+> This project only implements native Android modules, iOS is not yet implemented. </br>
 
 <img height="570" src="images/app.gif" width="270"/>
 
@@ -19,7 +20,7 @@
 - [Node.js > 12](https://nodejs.org) and npm
 - [Watchman](https://facebook.github.io/watchman)
 - [JDK > 8](http://openjdk.java.net/install/)
-- [Android Studio and Android SDK](https://developer.android.com/studio) (This Project Targets Android SDK version 29 and Minimum SDK Version is 16. It is **only tested in Android 10(Q) SDK 29**)
+- [Android Studio and Android SDK](https://developer.android.com/studio) (This Project Targets Android SDK version 29 and Minimum SDK Version is 16. It's **only tested in Android 10(Q) SDK 29**)
 
 
 ## Dependencies & 3rd Party Libraries
@@ -32,7 +33,7 @@
 ## Install
 Download the project and install all the dependencies using:
 ```sh
-git clone http://sdasd
+git clone https://github.com/johnkozaris/TomTomPOIExample.git
 cd TomTomPOIExample
 npm install
 ```
